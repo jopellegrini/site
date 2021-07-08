@@ -25,9 +25,11 @@ body {
 
 .main-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 1.2em;
   color: #fff;
+  margin-top: 1em;
+  padding: 0 1em 0 1em;
 }
 
 .main-ul {
@@ -35,6 +37,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0;
 }
 
 .main-ul__li {
@@ -45,7 +48,7 @@ body {
   margin-top: 100px;
 }
 
-.main-ul__li__a {
+.main-nav__a {
   color: #fff;
   text-decoration: none;
 }
