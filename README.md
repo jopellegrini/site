@@ -1,2 +1,1 @@
-# site
-A simple portfolio website
+Simple portfolio website
