@@ -107,7 +107,6 @@ h2 {
 
 .top-section__h1 {
   font-size: 2.5em;
-  margin-left: 1em;
 }
 
 .top-section__p {
@@ -151,12 +150,24 @@ h2 {
   margin: 0;
 }
 
-.main-section__skills__it {
+.main-section__skills__it__section {
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  margin: 1em 0;
+  padding: 0 0.5em;
+}
+
+.main-section__skills__it__section > p {
+  margin-bottom: 0;
+}
+
+.main-section__skills__it__elt-ctn {
   display: flex;
   flex-wrap: wrap;
 }
 
-.main-section__skills__it__elt {
+.main-section__skills__it__elt,
+.main-section__project__tech {
   padding: 0.1em 0.3em;
   margin: 0.8em;
   border: 1px solid #e0e0e0;
@@ -164,16 +175,27 @@ h2 {
   font-size: 1.1em;
 }
 
-.main-section__skills__it__elt > img {
+.main-section__skills__it__elt > img,
+.main-section__project__tech > img {
   height: auto;
   width: 1.6em;
 }
 
-.main-section__skills__it__elt > p {
+.main-section__skills__it__elt > p,
+.main-section__project__tech > p {
   display: inline-block;
   margin: 0;
   vertical-align: super;
   line-height: 2em;
+}
+
+.main-section__skills__lang__elt {
+  display: flex;
+}
+
+.main-section__skills__lang__elt > img {
+  width: 2em;
+  margin-right: 0.5em;
 }
 
 .main-section__project__title {
@@ -184,6 +206,10 @@ h2 {
 
 .main-section__project__date {
   margin: 0;
+}
+
+.main-section__project__tech-ctn {
+  display: flex;
 }
 
 .main-section__contact {
