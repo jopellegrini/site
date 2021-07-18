@@ -41,6 +41,13 @@ h2 {
   margin: 0 auto;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 .main-header {
   position: fixed;
   z-index: 999;
