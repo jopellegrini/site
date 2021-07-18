@@ -157,15 +157,23 @@ h2 {
 }
 
 .main-section__skills__it__elt {
-  padding: 0.5em;
-  margin: 1em;
+  padding: 0.1em 0.3em;
+  margin: 0.8em;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
+  font-size: 1.1em;
+}
+
+.main-section__skills__it__elt > img {
+  height: auto;
+  width: 1.6em;
 }
 
 .main-section__skills__it__elt > p {
   display: inline-block;
   margin: 0;
+  vertical-align: super;
+  line-height: 2em;
 }
 
 .main-section__project__title {
