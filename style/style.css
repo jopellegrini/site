@@ -116,13 +116,23 @@ a.anchor {
   display: none;
   z-index: 999;
 
+  transition: 0.2s;
+
+  cursor: pointer;
+
   padding: 1em;
 }
 
-.small-nav-toggle__btn {
-  cursor: pointer;
+.small-nav-toggle:hover {
+  background-color: #283c61;
+}
 
+.small-nav-toggle__btn {
   width: 3em;
+}
+
+#small-nav-close {
+  display: none;
 }
 
 .top-section {
@@ -331,11 +341,11 @@ a.anchor {
 }
 
 @media screen and (max-width: 40em) {
-  #main-nav-large {
+  #main-nav-cnt {
     display: none;
   }
 
-  #main-nav-small {
+  #main-nav-toggler {
     display: flex;
   }
 }

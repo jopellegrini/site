@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="main-header full-width">
-      <nav class="main-nav" id="main-nav-large">
+      <nav class="main-nav" id="main-nav-cnt">
         <div>
           <a class="main-nav__a" href="">Joseph Pellegrini</a>
         </div>
@@ -38,11 +38,18 @@
           <a class="main-nav__a" href="blog.html">Blog</a>
         </div>
       </nav>
-      <div class="small-nav-toggle" id="main-nav-small">
+      <div class="small-nav-toggle" id="main-nav-toggler">
         <img
           src="images/icons/menu.svg"
           alt="menu"
           class="small-nav-toggle__btn"
+          id="small-nav-open"
+        />
+        <img
+          src="images/icons/close.svg"
+          alt="close menu"
+          class="small-nav-toggle__btn"
+          id="small-nav-close"
         />
       </div>
     </header>
@@ -489,6 +496,26 @@
           });
         });
       });
+
+      var sm_menu_open = document.getElementById("small-nav-open"),
+        sm_menu_close = document.getElementById("small-nav-close"),
+        menu = document.getElementById(""),
+        sm_menu_opened = false;
+
+      function toggle_sm_menu() {
+        if (sm_menu_opened) {
+          sm_menu_open.style.display = "flex";
+          sm_menu_close.style.display = "none";
+          sm_menu_opened = false;
+        } else {
+          sm_menu_open.style.display = "none";
+          sm_menu_close.style.display = "flex";
+          sm_menu_opened = true;
+        }
+      }
+
+      sm_menu_open.onclick = toggle_sm_menu;
+      sm_menu_close.onclick = toggle_sm_menu;
     </script>
   </body>
 </html>
