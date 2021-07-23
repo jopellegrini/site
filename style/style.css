@@ -343,9 +343,37 @@ a.anchor {
 @media screen and (max-width: 40em) {
   #main-nav-cnt {
     display: none;
+    flex-direction: column;
   }
 
   #main-nav-toggler {
     display: flex;
+  }
+
+  .main-nav {
+    height: auto;
+    text-align: center;
+  }
+
+  .main-nav > div {
+    margin: 0;
+  }
+
+  .main-nav > div:first-child {
+    margin-left: 0;
+  }
+
+  .main-nav > div:last-child {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .main-ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .main-ul__li {
+    margin: 0;
   }
 }

@@ -499,15 +499,17 @@
 
       var sm_menu_open = document.getElementById("small-nav-open"),
         sm_menu_close = document.getElementById("small-nav-close"),
-        menu = document.getElementById(""),
+        menu = document.getElementById("main-nav-cnt"),
         sm_menu_opened = false;
 
       function toggle_sm_menu() {
         if (sm_menu_opened) {
+          menu.style.display = "none";
           sm_menu_open.style.display = "flex";
           sm_menu_close.style.display = "none";
           sm_menu_opened = false;
         } else {
+          menu.style.display = "flex";
           sm_menu_open.style.display = "none";
           sm_menu_close.style.display = "flex";
           sm_menu_opened = true;
