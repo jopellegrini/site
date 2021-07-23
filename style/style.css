@@ -53,14 +53,6 @@ a.anchor {
 }
 
 .main-header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-
-  height: 60px;
-
-  color: #fff;
-  background-color: #162136;
 }
 
 .main-nav {
@@ -68,12 +60,30 @@ a.anchor {
 
   display: flex;
 
-  margin-top: 1em;
-  padding: 0 1em 0 1em;
+  padding-top: 1em;
 
   color: #fff;
 
   justify-content: space-between;
+
+  position: fixed;
+  z-index: 990;
+  top: 0;
+
+  height: 2em;
+
+  color: #fff;
+  background-color: #162136;
+
+  width: 100%;
+}
+
+.main-nav > div:first-child {
+  margin-left: 1em;
+}
+
+.main-nav > div:last-child {
+  margin-right: 1em;
 }
 
 .main-ul {
@@ -95,6 +105,24 @@ a.anchor {
   text-decoration: none;
 
   color: #fff;
+}
+
+.small-nav-toggle {
+  position: fixed;
+  margin: 1em;
+  top: 0;
+  background-color: #162136;
+  border-radius: 0.4em;
+  display: none;
+  z-index: 999;
+
+  padding: 1em;
+}
+
+.small-nav-toggle__btn {
+  cursor: pointer;
+
+  width: 3em;
 }
 
 .top-section {
@@ -300,4 +328,14 @@ a.anchor {
 
 .main-section__contact__link > i {
   vertical-align: super;
+}
+
+@media screen and (max-width: 40em) {
+  #main-nav-large {
+    display: none;
+  }
+
+  #main-nav-small {
+    display: flex;
+  }
 }
