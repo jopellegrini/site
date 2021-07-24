@@ -61,7 +61,11 @@
           <a class="main-nav__a" href="blog.html">Blog</a>
         </div>
       </nav>
-      <div class="small-nav-toggle" id="main-nav-toggler">
+      <div
+        class="small-nav-toggle"
+        id="main-nav-toggler"
+        onclick="toggle_sm_menu()"
+      >
         <img
           src="images/icons/menu.svg"
           alt="menu"
@@ -538,9 +542,6 @@
           sm_menu_opened = true;
         }
       }
-
-      sm_menu_open.onclick = toggle_sm_menu;
-      sm_menu_close.onclick = toggle_sm_menu;
     </script>
   </body>
 </html>
