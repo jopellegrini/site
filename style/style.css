@@ -337,6 +337,12 @@ a.anchor {
   vertical-align: super;
 }
 
+@media screen and (max-width: 65em) {
+  .top-section-right {
+    padding-left: 40%;
+  }
+}
+
 @media screen and (max-width: 55em) {
   #main-nav-cnt {
     display: none;
