@@ -233,6 +233,11 @@ a.anchor {
   text-decoration: underline;
 }
 
+.article-main-img-container img {
+  max-width: 100%;
+  margin: 1em 0;
+}
+
 .article-container > h2,
 h3 {
   text-decoration: underline;
