@@ -290,6 +290,7 @@ h3 {
 .article-bib a {
   font-size: 1.1em;
   margin-bottom: 0.4em;
+  line-break: anywhere;
 }
 
 .main-section {
@@ -453,6 +454,7 @@ h3 {
 
   #main-nav-toggler {
     display: flex;
+    height: 2em;
   }
 
   .main-nav {
@@ -483,6 +485,22 @@ h3 {
   .main-ul__li {
     margin: 0;
     height: 2em;
+  }
+
+  .article-container {
+    margin-left: 6em;
+    margin-right: 2em;
+    width: auto;
+  }
+
+  .article-img-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .article-img-container-min {
+    width: 100%;
   }
 }
 
