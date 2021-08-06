@@ -252,16 +252,26 @@ h3 {
   font-size: 1.4em;
 }
 
-.article-img-container {
-  width: 80%;
+.article-img-container,
+.article-img-container-min {
   margin: 3em auto;
 }
 
-.article-img-container > img {
+.article-img-container {
+  width: 80%;
+}
+
+.article-img-container-min {
+  width: 60%;
+}
+
+.article-img-container > img,
+.article-img-container-min > img {
   width: 100%;
 }
 
-.article-img-container > p {
+.article-img-container > p,
+.article-img-container-min > p {
   text-align: center;
   font-size: 1.1em;
   font-style: italic;
