@@ -382,10 +382,12 @@ h3 {
 
 .main-section__skills__lang__elt {
   display: flex;
+  align-items: center;
 }
 
 .main-section__skills__lang__elt > img {
   width: 2em;
+  height: 2em;
   margin-right: 0.5em;
 }
 
